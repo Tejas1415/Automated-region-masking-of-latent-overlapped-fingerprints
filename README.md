@@ -18,3 +18,10 @@ Rest of the details based on the algorithm have been well illustrated in the pap
 Code by - Tejas K
 For any further doubts feel free to contact me at tejastk.reddy@gmail.com
 Project was done in month of Feb 2017.
+
+To run the code,
+1. Download d25.m file
+2. download any sample image uploaded. 
+3. change the image name in d25.m in the imread command. Overl is an image i reccomend since its the official image most other researchers test with.
+4. U might end up with ugly result, thats because parameters in the code such as blurring coefficient, Linear dilation constant in structuring element, Threshold etc vary fromone image to an other, fiddle with constants to get the desired results.
+5. If its a 3-4 fingerprints overlapped image then for each iteration of the algo, one fingerprint can be seperated, Therefore, upload the result as new image untill all fingerprints are seperated properly.

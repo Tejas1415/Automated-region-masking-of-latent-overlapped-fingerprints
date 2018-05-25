@@ -25,3 +25,6 @@ To run the code,
 3. change the image name in d25.m in the imread command. Overl is an image i reccomend since its the official image most other researchers test with.
 4. U might end up with ugly result, thats because parameters in the code such as blurring coefficient, Linear dilation constant in structuring element, Threshold etc vary fromone image to an other, fiddle with constants to get the desired results.
 5. If its a 3-4 fingerprints overlapped image then for each iteration of the algo, one fingerprint can be seperated, Therefore, upload the result as new image untill all fingerprints are seperated properly.
+
+
+This algorithm is robust against different kind of noises such as speckle noise, gaussian noise, salt and pepper noise etc. The robustness against these has been proved in the paper. The Codes involved for these have also been uploaded if needed to be tested.

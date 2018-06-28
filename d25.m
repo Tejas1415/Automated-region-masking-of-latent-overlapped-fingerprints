@@ -27,17 +27,17 @@ title('Y/255');
 A=ones(size(Y));                   % create a white image of the same size.
 H=A-(Y/255);                       % subtract blurred image with the pure white image.
 
-#The above step is to detect edges. U can use canny/sobel but canny produces edgesmore than the requirement
-# sobel producess less than the requirement.
-# bluring and subtracting method we can optimise the amount of blurring that we need.
+% The above step is to detect edges. U can use canny/sobel but canny produces edgesmore than the requirement
+% sobel producess less than the requirement.
+% bluring and subtracting method we can optimise the amount of blurring that we need.
 
 H12=filter2(f1,H,'valid'); 
 H2=imresize(H12,size(I3));
 figure,imshow(3*H2);title('3*h2');
 H3=3.1*H2;
 
-# check the IEEE paper in readme to understand why it was multiplied by a constant. 
-# vary the constant according to the type of input image.
+% check the IEEE paper in readme to understand why it was multiplied by a constant. 
+% vary the constant according to the type of input image.
 
 [x, y] = size(H2);
 
